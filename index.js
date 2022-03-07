@@ -15,7 +15,7 @@ app.get('/todos', async (req, res) => {
 		console.log(err)
 	}
 })
-app.get('/todos/:todosId', async (req, res) => {
+app.get('/todos/:todoId', async (req, res) => {
 	try{
 		const { todoId } = req.params
 		let todos = await TodosModel.findAll({where: { todos_id: todoId}})
