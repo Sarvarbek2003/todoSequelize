@@ -1,6 +1,6 @@
 const { TodosModel } = require('./models.js')
 const express = require('express')
-
+const PORT = process.env.PORT || 8000
 const app = express()
 app.use( express.json() )
 
@@ -71,7 +71,7 @@ app.delete('/todos/:todoId', async (req, res) => {
 })
 
 
-app.listen(8000, () => console.log('*8000'))
+app.listen(PORT, () => console.log('*8000'))
 
 
 /*
