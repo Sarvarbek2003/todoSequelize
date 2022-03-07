@@ -9,10 +9,10 @@ const { Sequelize } = require('sequelize')
 // 	dialect: 'postgres'
 // })
 
-let sequelize = new Sequelize('todos', 'postgres', '2003', {
-	host: 'localhost',
+let sequelize = new Sequelize('phocyoze', 'phocyoze', 'MPk9fJKQSU4wxs2iYfhWaQcms5CKlqL8', {
+	host: 'kesavan.db.elephantsql.com',
 	dialect: 'postgres',
-	logging: true
+	logging: false
 })
 
 
