@@ -54,7 +54,6 @@ TodosModel.init({
 	}
 }, { sequelize, tableName: 'todos' })
 
-TodosModel.sync({ force: true })
 
 
 
